@@ -1,2 +1,5 @@
 ﻿# BookWebApp
-NOTHING HERE YET...
+
+Nothing here yet...
+
+TODO: build dockerfile, docker-compose
