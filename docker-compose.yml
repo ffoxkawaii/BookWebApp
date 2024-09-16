@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  # MySQL Service
+  db:
+    image: mysql:8.0
+    container_name: mysql_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: SuperAdmin123
+      MYSQL_DATABASE: WebDB
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user_password
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - app-network
+
+  # phpMyAdmin Service
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    restart: always
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: SuperAdmin123
+    ports:
+      - 8069:80
+    networks:
+      - app-network
+
+  # PHP-Apache Service
+  web:
+    image: php:8.1-apache
+    container_name: php_web
+    restart: always
+    volumes:
+      - /d/Coding/HK241/Web/BookWebApp:/var/www/html  # change this to your current working directory
+    ports:
+      - 8071:80
+    networks:
+      - app-network
+    depends_on:
+      - db
+
+volumes:
+  db_data:
+
+networks:
+  app-network:
+    driver: bridge
