@@ -6,7 +6,7 @@ Cửa hàng bán sách là một ứng dụng web cho phép người dùng xem v
 
 ### Tính năng
 
-- Hiển thị danh sách sách từ cơ sở dữ liệu.
+- Hiển thị sách từ cơ sở dữ liệu.
 - Xem thông tin chi tiết về sách, bao gồm:
   - Tiêu đề
   - Mô tả
@@ -14,6 +14,8 @@ Cửa hàng bán sách là một ứng dụng web cho phép người dùng xem v
   - Xuất xứ
   - Thể loại
 - Xem nhiều hình ảnh của từng cuốn sách thông qua popup.
+- Thực hiện giao dịch mua sách
+- chưa nghĩ ra
 
 ## Công nghệ sử dụng
 
