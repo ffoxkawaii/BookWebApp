@@ -36,7 +36,7 @@ services:
     container_name: php_web
     restart: always
     volumes:
-      - "E:/Test/BookWebApp-main:/var/www/html"  # Đảm bảo đường dẫn này đúng
+      - "{link_thu_muc_hien_tai}:/var/www/html"  # Đảm bảo đường dẫn này đúng
     ports:
       - 8071:80
     networks:

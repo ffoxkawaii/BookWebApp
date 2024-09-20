@@ -21,7 +21,7 @@ $sql = "SELECT * FROM books WHERE id = $bookId";
 $bookResult = $conn->query($sql);
 $book = $bookResult->fetch_assoc();
 
-// Truy vấn hình ảnh sách
+// Truy vấn hình ảnh sáchz
 $imageSql = "SELECT image_url FROM book_images WHERE book_id = $bookId";
 $imageResult = $conn->query($imageSql);
 
