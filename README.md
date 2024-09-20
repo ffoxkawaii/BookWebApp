@@ -1,5 +1,21 @@
-﻿# cd E:\Test\BookWebApp-main
+# Cửa Hàng Bán Sách
 
-# docker-compose up
+## Giới thiệu
 
-# docker-compose up --build -d
+Cửa hàng bán sách là một ứng dụng web cho phép người dùng xem và tìm hiểu về các cuốn sách khác nhau. Ứng dụng được xây dựng bằng PHP và sử dụng MySQL làm cơ sở dữ liệu. Người dùng có thể xem thông tin chi tiết về từng cuốn sách, bao gồm tiêu đề, tác giả, xuất xứ, thể loại và nhiều hình ảnh của sách.
+
+### Tính năng
+
+- Hiển thị danh sách sách từ cơ sở dữ liệu.
+- Xem thông tin chi tiết về sách, bao gồm:
+  - Tiêu đề
+  - Mô tả
+  - Tác giả
+  - Xuất xứ
+  - Thể loại
+- Xem nhiều hình ảnh của từng cuốn sách thông qua popup.
+
+## Yêu cầu hệ thống
+
+- Docker
+- Docker Compose
