@@ -15,7 +15,9 @@ Cửa hàng bán sách là một ứng dụng web cho phép người dùng xem v
   - Thể loại
 - Xem nhiều hình ảnh của từng cuốn sách thông qua popup.
 
-## Yêu cầu hệ thống
+## Công nghệ sử dụng
 
 - Docker
-- Docker Compose
+- PHP
+- MySQL
+- Git
