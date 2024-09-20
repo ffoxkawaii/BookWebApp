@@ -30,12 +30,13 @@ services:
       - app-network
 
   # PHP-Apache Service
-  web:
-    image: php:8.1-apache
+  php_web:
+    build:
+      context: ./  # Tạo image từ Dockerfile trong cùng thư mục
     container_name: php_web
     restart: always
     volumes:
-      - /d/Coding/HK241/Web/BookWebApp:/var/www/html  # change this to your current working directory
+      - "E:/Test/BookWebApp-main:/var/www/html"  # Đảm bảo đường dẫn này đúng
     ports:
       - 8071:80
     networks:

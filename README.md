@@ -1,5 +1,5 @@
-﻿# BookWebApp
+﻿# cd E:\Test\BookWebApp-main
 
-Nothing here yet...
+# docker-compose up
 
-TODO: login page
+# docker-compose up --build -d
