@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
 }
-.login {
+.login {   
     display: flex;
     flex-direction: column;
     justify-content: center;
